@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyas Elegantes</title>
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: #000;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .hero {
+            background: url('https://example.com/hero-image.jpg') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 150px 20px;
+        }
+        .hero h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+        .hero button {
+            background: gold;
+            color: #000;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .catalogo {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .catalogo h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .productos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .producto {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .producto img {
+            width: 100%;
+            height: auto;
+        }
+        .producto .info {
+            padding: 15px;
+        }
+        .producto .info h3 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .producto .info p {
+            margin: 5px 0;
+            color: #777;
+        }
+        .producto .info button {
+            background: gold;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        footer {
+            background: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        footer a {
+            color: gold;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div><h1>Joyas Elegantes</h1></div>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#catalogo">Catálogo</a>
+            <a href="#sobre-nosotros">Sobre Nosotros</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+    <section class="hero" id="inicio">
+        <h1>Joyas que cuentan tu historia</h1>
+        <p>El toque de lujo que mereces</p>
+        <button>Explorar Colección</button>
+    </section>
+    <section class="catalogo" id="catalogo">
+        <h2>Nuestra Colección</h2>
+        <div class="productos">
+            <div class="producto">
+                <img src="https://example.com/joya1.jpg" alt="Producto 1">
+                <div class="info">
+                    <h3>Anillo de Oro</h3>
+                    <p>$1200</p>
+                    <button>Añadir al Carrito</button>
+                </div>
+            </div>
+            <div class="producto">
+                <img src="https://example.com/joya2.jpg" alt="Producto 2">
+                <div class="info">
+                    <h3>Collar Elegante</h3>
+                    <p>$850</p>
+                    <button>Añadir al Carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Joyas Elegantes. Todos los derechos reservados.</p>
+        <p>
+            <a href="#">Términos y Condiciones</a> |
+            <a href="#">Política de Privacidad</a>
+        </p>
+    </footer>
+</body>
+</html>
